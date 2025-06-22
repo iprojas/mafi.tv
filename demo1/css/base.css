@@ -9,7 +9,7 @@
 :root {
   font-size: 14px;
   --color-text: #333;
-  --color-bg: #fff;
+  --color-bg: #000;
   --color-link: #929292;
   --color-link-hover: #000;
   --page-padding: 5vw;
