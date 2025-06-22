@@ -1,4 +1,11 @@
 /* Magnific Popup CSS */
+
+
+body.mfp-open{		
+overflow:hidden!important;		
+height:100%; 	
+}
+
 .mfp-bg {
   top: 0;
   left: 0;
@@ -9,6 +16,7 @@
   position: fixed;
   background: #0b0b0b;
   opacity: 0.8;
+ 
 }
 
 .mfp-wrap {
@@ -18,8 +26,11 @@
   height: 100%;
   z-index: 1043;
   position: fixed;
+  overflow: hidden;
   outline: none !important;
   -webkit-backface-visibility: hidden;
+   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .mfp-container {
@@ -142,6 +153,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-close {
+  display: none!important;
   width: 44px;
   height: 44px;
   line-height: 44px;
@@ -414,4 +426,34 @@ img.mfp-img {
   }
 }
 
-/*# sourceMappingURL=magnific-popup.css.map */
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 1.15s ease-out;
+  transition: all 1.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
