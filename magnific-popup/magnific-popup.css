@@ -109,7 +109,7 @@ height:100%;
 }
 
 .mfp-preloader {
-  color: #CCC;
+  color: #000;
   position: absolute;
   top: 50%;
   width: auto;
