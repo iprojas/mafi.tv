@@ -446,8 +446,8 @@ img.mfp-img {
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
-  -webkit-transition: all 1.15s ease-out;
-  transition: all 1.15s ease-out;
+  -webkit-transition: all 3.15s ease-out;
+  transition: all 3.15s ease-out;
 }
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
