@@ -1,4 +1,13 @@
 /* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
+
+.menu {
+    padding: 10px 30px;
+    background-color: #0000003b;
+    margin: 20px 10vw;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
 .grid {
 	position: relative;
 	clear: both;
