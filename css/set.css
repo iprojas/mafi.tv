@@ -270,3 +270,24 @@ figure.effect-ming:hover figcaption {
 figure.effect-ming:hover img {
 	opacity: 0.4;
 }
+
+/* font fix for movile */
+@media screen and (max-width: 600px) {
+	figure.effect-selena figcaption {
+		padding: 10% 1em;
+		font-size: 10px;
+	}
+	figure.effect-selena.grid__item.alt figcaption {
+		padding: 20% 2em;
+		font-size: 10px;
+	}
+
+	figure.effect-selena p {
+		display: none;
+	}
+	figure.effect-apollo p {
+		max-width: 100%;
+		border-right: none;
+		text-align: center;
+	}
+}
